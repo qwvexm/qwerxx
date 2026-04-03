@@ -1,16 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>qwvexm repo</title>
-        <link rel="stylesheet" href="../style.css">
-    </head>
-    <body>
-        <div align="center">
-        <h1>qwvexm cydia repository</h1>
-        <hr/>
-        <h3>Add repo to:</h3>
-        <p><a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://qwvexm.github.io/">Cydia</a></p>
-        </div>
-    </body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Cydia Repo</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>My Cydia Repository</h1>
+
+<p class="subtitle">
+Welcome! Add this repository to Cydia to install my tweaks.
+</p>
+
+<div class="repo-box">
+
+<p class="repo-url" id="repo">
+https://qwvexm.github.io/
+</p>
+
+<button onclick="copyRepo()">Copy Repo URL</button>
+
+</div>
+
+<div class="guide">
+
+<h2>How to Add</h2>
+
+<ol>
+<li>Open Cydia</li>
+<li>Go to Sources</li>
+<li>Tap Edit → Add</li>
+<li>Paste the repository URL</li>
+</ol>
+
+</div>
+
+<footer>
+<p>Repository hosted on GitHub Pages</p>
+</footer>
+
+</div>
+
+<script>
+function copyRepo() {
+    const text = document.getElementById("repo").innerText;
+    navigator.clipboard.writeText(text);
+    alert("Repository URL copied!");
+}
+</script>
+
+</body>
 </html>
