@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>My Cydia Repo</title>
 
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<div class="container">
+<div class="background"></div>
 
-<h1>My Cydia Repository</h1>
+<div class="card">
+
+<h1 class="title">My Cydia Repo</h1>
 
 <p class="subtitle">
-Welcome! Add this repository to Cydia to install my tweaks.
+Add this repository to Cydia
 </p>
 
 <div class="repo-box">
 
-<p class="repo-url" id="repo">
-https://qwvexm.github.io/
+<p id="repo">
+https://USERNAME.github.io/REPO/
 </p>
 
-<button onclick="copyRepo()">Copy Repo URL</button>
+<button onclick="copyRepo()">Copy Repo</button>
 
 </div>
 
 <div class="guide">
 
-<h2>How to Add</h2>
+<h2>How to install</h2>
 
 <ol>
 <li>Open Cydia</li>
 <li>Go to Sources</li>
 <li>Tap Edit → Add</li>
-<li>Paste the repository URL</li>
+<li>Paste the repo URL</li>
 </ol>
 
 </div>
 
-<footer>
-<p>Repository hosted on GitHub Pages</p>
-</footer>
-
 </div>
 
 <script>
-function copyRepo() {
-    const text = document.getElementById("repo").innerText;
-    navigator.clipboard.writeText(text);
-    alert("Repository URL copied!");
+
+function copyRepo(){
+let text=document.getElementById("repo").innerText
+navigator.clipboard.writeText(text)
+alert("Repo copied!")
 }
+
 </script>
 
 </body>
