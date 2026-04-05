@@ -1,22 +1,15 @@
-Package: com.unlimapps.uaupdatetools
-Version: 1.1r-102
+Package: com.vlesscore.app
+Name: vless-core
+Version: 0.2.17-1
 Architecture: iphoneos-arm
-Maintainer: Daniil <vsergozz@bk.ru>
-Installed-Size: 745
-Pre-Depends: firmware (>= 8.0)
-Depends: mobilesubstrate, com.unlimapps.uasharedtools (>= 2.1r-43)
-Conflicts: com.example.appadmin-clone
-Replaces: com.unlimapps.uaupdatetools
-Provides: com.unlimapps.uaupdatetools
-Filename: deb/com.unlimapps.uaupdatetools_1.0r-102_iphoneos-arm.deb
-Size: 863628
-MD5sum: 6d7f076eb541e5bbec3e3629f152d16d
-SHA1: 058a98b3da7197c1c767c71a6db420b392a460d2
-SHA256: 8a251edeb458547686060caa4545800061b5d6d465b34982c1e76580474180c1
-Section: Tweaks
+Maintainer: notfence
+Author: notfence
+Section: Network
 Priority: optional
-Homepage: http://unlimapps.com
-Description: Downgrade your iOS apps directly from the App Store!
-Tag: role::enduser, interface::button
-Author: UnlimApps Inc. <support@unlimapps.com>
-Name: App Admin (test)
+Depends: firmware (>= 6.0), mobilesubstrate
+Filename: ./deb/com.vlesscore.app_iphoneos-arm.deb
+Size: 2731580
+MD5sum: e5126a69919fef650d46915779a3cf73
+SHA1: aa50f6a48b984926060a17c08b5bdaac0a20c4a5
+SHA256: 5f375b1fc6d1e43e096c6952a9f5fca5b2262141475f0221c45f802de8da15cf
+Description: vless-core app
